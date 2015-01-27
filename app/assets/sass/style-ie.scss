@@ -1,0 +1,42 @@
+$px-only: true;
+
+
+//  ==========================================================================
+//  Global
+//  ==========================================================================
+
+    //  Compass
+    @import "compass";
+
+    //  Functions 
+    @import "helpers/functions.scss",
+            "helpers/variables.scss";
+
+    //  Structure root 
+    @import "base/reset.scss",
+            "base/typography.scss";
+
+    //  Class 
+    //  @import "helpers/class.scss";
+
+
+//  ==========================================================================
+//  Theme
+//  ==========================================================================    
+
+    //  Layouts 
+    @import "layouts/header.scss",
+            "layouts/main.scss",
+            "layouts/footer.scss";
+
+    //  Pages
+    @import "layouts/pages/home.scss";  
+
+
+//  ==========================================================================
+//  Modules
+//  ==========================================================================    
+
+    //  Components
+    //  @import "modules/buttons.scss";
+

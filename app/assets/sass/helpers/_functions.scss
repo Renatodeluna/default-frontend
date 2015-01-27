@@ -1,0 +1,35 @@
+//  
+//  Function to transform average PX unit in REM.
+//  How to use is fairly simple example:
+//
+//  $px-only: false; //In browsers that support REM
+//  .class { font-size: u(14); }
+//  
+
+@function u($values) {
+
+	$list: ();
+
+	@each $value in $values {
+
+		@if $value == 'auto' {
+			$list: append($list, $value);
+		}
+
+		@else {
+
+			@if ($px-only) {
+				$list: append($list, $value + px);
+			}
+
+			@else {
+				$list: append($list, ($value/$font-size) + rem);
+			}
+
+		}
+		
+	}
+
+	@return $list();
+
+}

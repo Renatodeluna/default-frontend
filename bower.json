@@ -1,0 +1,21 @@
+{
+  "name": "default",
+  "version": "(1.0.0)",
+  "description": "Descricao do site",
+  "main": "app/",
+  "keywords": [
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "authors": [
+    "nome do autor do projeto"
+  ],
+  "license": "MIT",
+  "homepage": "www.url-do-site.com.br",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.1",
+    "modernizr": "~2.8.3"
+  }
+}

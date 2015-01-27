@@ -1,0 +1,11 @@
+node_modules
+dist/
+app/assets/js/vendor
+test/bower_components
+npm-debug.log
+**/.*
+!.bowerrc
+!.gitignore
+!.editorconfig
+!.gitattributes
+!.jshintrc

@@ -1,0 +1,28 @@
+/*  humanstxt.org  */
+----------------------------------
+/*  Team  */
+----------------------------------
+
+Front-End:		nome
+Twitter: 		@nome
+E-mail:			nome@gmail.com
+From: 			cidade, estado, pais
+Site:			http://www.nome.com.br
+
+----------------------------------
+/*  SITE  */
+----------------------------------
+
+Project Name:	name
+Technology: 	HTML5, CSS3, Javascript, Jquery, Grunt, Bower,
+				Mordernizr, SASS, Compass, Media Queries
+Last update:	00/00/0000
+Language: 		Português / Ingles 
+Doctype:		HTML5
+Softwares: 		Sublime Text 3, Photoshop
+
+----------------------------------
+/*  THANKS  */
+----------------------------------
+
+<profission>  <name>  <twitter>

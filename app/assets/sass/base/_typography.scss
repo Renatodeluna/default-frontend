@@ -1,0 +1,111 @@
+//	==========================================================================
+//  Typography based Normalize
+//  ==========================================================================
+
+		
+	//  Headings
+	//  ======================================================================
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: u($line-height/2 0);
+			line-height: u($line-height);
+
+			small {
+				font-weight: normal;
+				line-height: u(0.875);
+			}
+		}
+
+		h1, h2, h3 { line-height: u($line-height * 2); }
+
+		h1 { font-size: u($font-size * 2.375);  } // 38px
+		h2 { font-size: u($font-size * 2);      } // 32px
+		h3 { font-size: u($font-size * 1.5);    } // 24px
+		h4 { font-size: u($font-size * 1.125);  } // 18px
+		h5 { font-size: u($font-size);          } // 16px
+		h6 { font-size: u($font-size * 0.75);   } // 12px
+
+		p { margin: u(0 0 $font-size / 2); }
+
+		small   { font-size: 85%;     }
+		strong  { font-weight: bold;  }
+		em      { font-style: italic; }
+		cite    { font-style: normal; }
+				
+
+	//  Unordered and ordered lists
+	//  ======================================================================
+
+		ul, ol {
+			padding: 0;
+			margin: u(0 0 24/2 1.5);
+		}
+
+		ul ul,
+		ul ol,
+		ol ol,
+		ol ul { margin-bottom: 0; }
+
+		li { line-height: u($line-height); }
+
+
+	//  Description lists
+	//  ======================================================================
+
+		dl      { margin-bottom: u($line-height);   }
+		dt, dd  { line-height: u($line-height);     }
+		dt      { font-weight: bold;                }
+		dd      { margin-left: u($line-height / 2); }
+
+
+	//  Abbreviations and acronyms
+	//  ======================================================================
+
+		abbr[title] { cursor: pointer; }
+		abbr {
+			font-size: 90%;
+			text-transform: uppercase;
+		}
+
+
+	//  Blockquotes
+	//  ======================================================================
+
+		blockquote {
+			padding: u(0 0 0 0.9375);
+			margin: u(0 0 $line-height);
+			border-left: u(0.3125) solid $gray;
+
+			p {
+				margin-bottom: 0;
+				font-size: u($font-size * 1.125); // 18px
+				line-height: u($line-height);
+			}
+
+			small {
+				display: block;
+				line-height: u($line-height);
+				color: $gray;
+			}
+		}
+
+
+	//  Quotes
+	//  ======================================================================
+
+		q:before,
+		q:after,
+		blockquote:before,
+		blockquote:after { content: ""; }
+
+
+	//  Addresses
+	//  ======================================================================
+
+		address {
+			display: block;
+			margin-bottom: u($line-height);
+			font-style: normal;
+			line-height: u($line-height);
+		}
+		

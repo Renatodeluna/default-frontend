@@ -1,0 +1,24 @@
+//  ==========================================================================
+//  Main
+//  ==========================================================================
+
+    .main {
+
+        
+    }
+
+    	.img {
+    		display: block;
+				height: u(270);
+    		with: u(800);
+    		margin: 0 auto;
+    		background: url("../img/logo-default.png") no-repeat center top;
+    	}
+    
+	    //	Example of sprites
+	    // .img {
+	    //   @include hide-text(left);
+	    //   @include sprite($sprite, one, true);
+	    //   display: block;
+	    //   background-image: $sprite;
+	    // }

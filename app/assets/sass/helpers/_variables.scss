@@ -1,0 +1,54 @@
+//  ==========================================================================
+//  Variables
+//  ==========================================================================
+
+    
+  //  Base font size 
+  //  ==========================================================================
+    
+    // The font size set on the root html element
+    $font-size: 16;
+
+    // The base line height determines the basic unit of vertical
+    $line-height: 24;
+
+
+  //  Sprite 
+  //  ==========================================================================
+
+    $sprite: sprite-map("../img/sprites/default/*.png", $layout: "vertical", $spacing: 5px);
+    $sprite-hd: sprite-map("../img/sprites/retina/*.png", $layout: "vertical", $spacing: 5px);
+
+
+  //  Colors
+  //  ==========================================================================
+
+    $gray-lighter:      #aeaeae;
+    $gray:              #CCC;
+    $white:             #FFF;
+    $black:             #000;
+
+    //  Translucidos
+    $rgba-gray-lighter: rgba(174,174,174,0.60);
+    $rgba-gray-light:   rgba(204,204,204,0.60);
+    $rgba-white:        rgba(255,255,255,0.60);
+    $rgba-black:        rgba(0,0,0,0.60);
+
+    //  Links
+    $link:              #CCC;
+    $link-hover:        darken($link, 15%);
+
+    //  Placeholder
+    $placeholder-text:   $gray;
+
+    //  Buttons
+    $btn-bg:            $white;
+    $btn-bg-hover:      lighten($gray, 10%); //lighten, darken, adjust-hue
+    $btn-border:        $gray-lighter;
+
+
+  //  Strutura
+  //  ==========================================================================
+    
+    $input-height:  $font-size / 0.625;
+

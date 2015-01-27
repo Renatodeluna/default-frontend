@@ -1,0 +1,284 @@
+//  ==========================================================================
+//  Reset of Normalize
+//  ==========================================================================
+
+
+	//  Corrects block display not defined in IE8/9 & FF3
+	//  ======================================================================
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		main,
+		nav,
+		section,
+		summary { display: block; }
+	
+		*,
+		*:before,
+		*:after { @include box-sizing(border-box); }
+
+
+	//	Display block in IE8/9 and FF3
+	//  ======================================================================
+
+		audio[controls],
+		canvas,
+		progress,
+		video {
+			display: inline-block;
+			vertical-align: baseline;
+		}
+
+
+	//	Prevents modern browsers from displaying 'audio' without controls
+	//  ======================================================================
+
+		audio:not([controls]) {
+			display: none;
+			height: 0;
+		}
+
+
+	//	Hide from element semantics - attribute not present in IE8/9, FF3, S4
+	//  ======================================================================
+
+		[hidden],
+		template { display: none; }
+
+
+	//	Base settings
+	//  ======================================================================
+
+		html {
+			min-height: 100%;
+			vertical-align: baseline;
+			-webkit-text-size-adjust: 100%;
+					-ms-text-size-adjust: 100%; 
+		}
+
+		body {
+			background: $white;
+			font-family: sans-serif;
+			min-height: 100%;
+			margin: 0;
+			padding: 0;
+			font-size: u($font-size);
+			line-height: u($line-height);
+			position: relative;
+		}
+
+
+	//	Remove text-shadow highlighted selection and add background color and 
+	//	text of your choice
+	//  ======================================================================
+
+		::selection {
+			background: #efcb47;
+			color: #FFF;
+			text-shadow: none;
+		}
+
+
+	//	Prevens sub and sup affecting linhe-height in all browsers
+	//  ======================================================================
+
+		sub,
+		sup {
+			position: relative;
+			font-size: 75%;
+			line-height: 0;
+			vertical-align: baseline;
+		}
+
+		sup { top: u(-0.5);  }
+		sub { top: u(-0.25); }
+
+
+	//	Remover border when inside 'a' element in IE 8/9
+	//  ======================================================================
+
+		img { 
+			border: 0; 
+			margin: 0;
+		}
+
+
+	//  Correct overflow not hidden in IE 9/10/11
+	//  ======================================================================
+
+		svg:not(:root) { overflow: hidden; }		
+
+
+	//	Horizontal rules
+	//  ======================================================================
+
+		hr {
+			margin: u($line-height);
+			border: 0;
+			border-top: u(0.0625) solid $gray;
+			border-bottom: u(0.0625) solid $white;
+		}
+
+
+	//	Contain overflow in all browsers.
+	//  ======================================================================
+
+		pre { overflow: auto; }
+
+
+	//	Address odd `em`-unit font size rendering in all browsers.
+	//  ======================================================================
+
+		code,
+		kbd,
+		pre,
+		samp {
+			font-family: monospace, monospace;
+			font-size: u($font-size);
+		}
+
+
+	//	Links
+	//  ======================================================================
+
+		a:hover,
+		a:focus,
+		a:active { outline: 0; }
+
+
+	// 	Remove the gray background color from active links in IE 10
+	//  ======================================================================
+
+		a { background: transparent; }
+
+
+//  ==========================================================================
+//  Forms
+//  ==========================================================================
+
+	// 
+	//  1. Correct font properties not being inherited.
+ 	// 	2. Address margins set differently in Firefox 4+, Safari, and Chrome.
+	//  	
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 1rem; // 1
+		margin: 0; // 2
+		vertical-align: middle;
+	}
+
+	//  
+	//  Address Firefox 4+ setting `line-height` on `input` using `!important` in
+	//	the UA stylesheet
+	//  
+	button, input { line-height: u($input-height); }
+
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+	}
+
+	//	
+	//	Fix the cursor style for Chrome's increment/decrement buttons. For certain
+	//	`font-size` values of the `input`, it causes the cursor style of the
+	//	decrement button to change from `default` to `text`.
+	//	
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+	// 	Re-set default cursor for disabled elements.
+	button[disabled],
+	html input[disabled] {
+		cursor: not-allowed;
+		pointer-events: none;
+		background: $gray;
+		border: $gray-lighter;
+	}
+
+	//  
+	//  Avoid the webkit bug in Android 4.0.* wher (2) destroys native 'audio' and 'video' controls
+	//	Corrects inability to style clickable 'input' types in IOS
+	//	Imporves usability and consistency of cursor style between image-type 'input' and others
+	//  
+	button,
+	html input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		-webkit-appearance: button;
+		cursor: pointer;
+	}
+
+	label,
+	select,
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	input[type="radio"],
+	input[type="checkbox"] { cursor: pointer; }
+
+	input[type="radio"],
+	input[type="checkbox"] { padding: 0; }
+
+	//	Appearance in safari/chrome
+	input[type="search"] { 
+		@include box-sizing(content-box);
+		-webkit-appearance: textfield;
+	}
+		
+	//	Inner padding issues in chrome osx, safari 5
+	input[type="button"]::-webkit-search-decoration,
+	input[type="button"]::-webkit-search-cancel-button {
+		-webkit-appearance: textfield; 
+	}
+
+	//  
+	//  Remove vertical scrollbar in IE6/9
+	//	Readability and alignment cross-browser
+	//  		
+	textarea {
+		overflow: auto;
+		vertical-align: top;
+	}
+
+
+//  ==========================================================================
+//  Tables
+//  ==========================================================================	
+
+	//	Remove most spacing between table cells.
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	}
+
+	td,
+	th { padding: 0; }
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
