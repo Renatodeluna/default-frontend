@@ -3,6 +3,63 @@
 #![logo](app/assets/img/logo-default.png)
 
 ## Introduction
+Welcome to <b>Default FrontEnd</b>, a workflow for rapid development of interface, facing the front-end developers. Its architecture, and standard nomenclature was created on [Styleguide FrontEnd](http://github.com/Renatodeluna/styleguide-frontend) a very good style guide, which gathered itself several technical architectures and standards.
+
+With these two tools your workflow will be much more productive, easy to maintain and scalable, thus reducing to the learning curve of new members in the team.
+
+## Benefits
+
+* <b>Facilitate the maintenance of long-term projects;</b>
+* <b>Code understanding facility;</b>
+* <b>Scalable code;</b>
+* <b>Standard designs;</b>
+* <b>Code reuse;</b>
+* <b>Reduce the learning curve for new team members;</b>
+* <b>Modularization design;</b>
+
+## Concept of structure
+
+* <b>HTML</B>: [@mdo](http://mdo.github.io/code-guide/) and [idiomatic HTML](https://github.com/necolas/idiomatic-html); 
+* <b>CSS - SASS</B>: [BEM](http://bem.info/), [SMACSS](http://smacss.com/) [SUIT CSS](https://suitcss.github.io/) and [Idiomatic CSS](https://github.com/necolas/idiomatic-css);
+* <b>Javascript</B>: [idiomatic JS](https://github.com/necolas/idiomatic-js);
+
+## Best of
+
+For you to enjoy all the benefits `Default FrontEnd` strongly recommend reading the [Styleguide FrontEnd](http://github.com/Renatodeluna/styleguide-frontend).
+
+## Instalation and usage
+
+Install the Grunt tasks:
+
+```shell
+    npm install
+```
+
+Install the Bower packages:
+
+```shell
+    bower install
+```
+
+To development, simply do:
+
+```shell
+    grunt
+```
+or
+```shell
+    grunt default
+```
+
+This will start a server for you on `localhost:9000` or `127.0.0.1:9000`, with a watch task for your HTML, Sass and JavaScript files, with LiveReload activated.
+
+If you want to generate the deploy version, run:
+
+```shell
+    grunt build
+```
+
+It will create a `dist` folder only the with the files you need to deploy: concatenated and uglyfied `JavaScript` files, along with minified `CSS` and optimized imagery.
 
 ## Structure file
 
@@ -10,16 +67,16 @@
   default-frontend
   ├── app
   |   ├── assets
-  |   |   ├── fonts
+  |   |   ├── fonts/
   |   |   |
   |   |   ├── img
-  |   |   |   ├── public
+  |   |   |   ├── public/
   |   |   |   └── sprites
   |   |   |       ├── default
   |   |   |       └── retina
   |   |   |
   |   |   ├── js
-  |   |   |   ├── modules
+  |   |   |   ├── modules/
   |   |   |   └── vendor
   |   |   |       └── jquery
   |   |   |
@@ -65,15 +122,21 @@
   |   |
   |   └── index.html
   |
-  └── Gruntfile.js
-  └── package.json
-  └── bower.json
-  └── .bowerrc
-  └── .editorconfig
-  └── .gitattributes
-  └── .gitignore
-  └── .jshintrc
-  └── .scc-lint.yml
+  ├── dist/
+  |
+  |── Gruntfile.js
+  |── package.json
+  |── bower.json
+  |── .bowerrc
+  |── .editorconfig
+  |── .gitattributes
+  |── .gitignore
+  |── .jshintrc
+  |── .scc-lint.yml
   └── .csscomb.json
   
 ```
+
+## License
+
+[MIT License](http://opensource.org/licenses/MIT). © Copyright 2015, [@renatodeluna](http://twitter.com/renatodeluna).
