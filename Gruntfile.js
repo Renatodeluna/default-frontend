@@ -54,8 +54,8 @@ module.exports = function(grunt) {
 
             html: {
                 files: [
-                    '<%= dirs.app %>/*.html',
-                    '<%= dirs.app %>/*/*.html',
+                    // carregamento automático do browser para as atualizações das extensões abaixo
+                    '*.{html,htm,shtml,shtm,xhtml,php,jsp,asp,aspx,erb,ctp}'
                 ]
             }
 
