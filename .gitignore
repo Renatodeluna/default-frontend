@@ -3,9 +3,11 @@ dist/
 app/assets/js/vendor
 test/bower_components
 npm-debug.log
+.DS_Store
 **/.*
 !.bowerrc
 !.gitignore
 !.editorconfig
 !.gitattributes
 !.jshintrc
+!.scss-lint.yml
